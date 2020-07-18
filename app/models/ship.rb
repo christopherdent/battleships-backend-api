@@ -1,6 +1,9 @@
 class Ship < ApplicationRecord
   belongs_to :user, optional: true
 
+  validate do
+    ship_count_valid?
+  end 
 
   def points  ##can we make these differ based on the enemy?  future problem!
     if self.kind == "Battleship"
@@ -18,4 +21,13 @@ class Ship < ApplicationRecord
     end
   end
 
+
+  private
+
+  def ship_count_valid?
+    if self.user.ships.count >= 5
+      self.errors.add(:ship_max, "Maximum Fleet Capacity Reached!")
+
+    end
+  end
 end
