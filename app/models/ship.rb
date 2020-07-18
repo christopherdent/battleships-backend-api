@@ -1,9 +1,9 @@
 class Ship < ApplicationRecord
   belongs_to :user, optional: true
 
-  validate do
-    ship_count_valid?
-  end 
+  # validate do
+  #   ship_count_valid?
+  # end
 
   def points  ##can we make these differ based on the enemy?  future problem!
     if self.kind == "Battleship"

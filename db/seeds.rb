@@ -125,7 +125,8 @@ ships_array = [
   "name": "Admiral Graf Spee",
   "kind": "Cruiser",
   "country": "Germany",
-  "image": "https://en.wikipedia.org/wiki/File:Bundesarchiv_DVM_10_Bild-23-63-06,_Panzerschiff_%22Admiral_Graf_Spee%22.jpg"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Graf_Spee_in_Montevideo.png"
+
   },
       {
   "name": "U-889",
@@ -173,7 +174,7 @@ ships_array = [
 "name": "Quintino Sella",
 "kind": "Destroyer",
 "country": "Italy",
-"image": "https://www.google.com/url?sa=i&url=http%3A%2F%2F200.58.119.69%2Fsella.html&psig=AOvVaw1QSqQwND0rYedBo3KcbytJ&ust=1595014952579000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDXsvjD0uoCFQAAAAAdAAAAABAJ"
+"image": "https://i.redd.it/uairmmvcrb331.jpg"
 
 },
 {
@@ -253,7 +254,7 @@ ships_array = [
 ]
 
 ships_array.each do |ship|
-   
+
   # puts "#{ship[:name]}: #{ship[:country]}"
   Ship.create(name: "#{ship[:name]}", kind: "#{ship[:kind]}", country: "#{ship[:country]}", image: "#{ship[:image]}", user_id: User.first.id)
 end
