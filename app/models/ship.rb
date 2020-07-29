@@ -1,5 +1,8 @@
 class Ship < ApplicationRecord
   belongs_to :user, optional: true
+  belongs_to :fleet
+
+
 
   # validate do
   #   ship_count_valid?

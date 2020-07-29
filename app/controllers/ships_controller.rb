@@ -19,7 +19,7 @@ class ShipsController < ApplicationController
 
   def destroy
     ship = Ship.find(params[:id])
-    ship.destroy 
+    ship.destroy
   end
 
 
