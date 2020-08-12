@@ -11,10 +11,6 @@ class ShipsController < ApplicationController
   end
 
   def create
-    user = User.find(params[:user_id])
-    # ship = user.ships.build({
-    #   name:  these fields will reflect form fields after I build the form
-    #   })
   end
 
   def destroy

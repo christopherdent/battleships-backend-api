@@ -5,9 +5,6 @@ class CreateShips < ActiveRecord::Migration[6.0]
       t.string :kind
       t.string :country
       t.string :image
-      t.references :user, null: false, foreign_key: true
-
-      t.timestamps
-    end
+      end
   end
 end

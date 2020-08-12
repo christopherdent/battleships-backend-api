@@ -2,11 +2,11 @@ require 'pry'
 require 'securerandom'
 
 User.destroy_all
-Ship.delete_all
-
+Ship.destroy_all
+Fleet.destroy_all
 ##Ship.new(name, class, country, image)
 User.create(name: "Computer")
-
+Fleet.create
 
 ships_array = [
     {
@@ -253,25 +253,7 @@ ships_array = [
 }
 ]
 
+
 ships_array.each do |ship|
-
-  # puts "#{ship[:name]}: #{ship[:country]}"
-  Ship.create(name: "#{ship[:name]}", kind: "#{ship[:kind]}", country: "#{ship[:country]}", image: "#{ship[:image]}", user_id: User.first.id)
+  Ship.create(name: "#{ship[:name]}", kind: "#{ship[:kind]}", country: "#{ship[:country]}", image: "#{ship[:image]}")
 end
-
-#
-# trainer_collection = []
-#
-# trainers_name.each do |name|
-#   trainer_collection << Trainer.create(name: name)
-# end
-#
-# trainer_collection.each do |trainer|
-#   team_size = (SecureRandom.random_number(6) + 1).floor
-#
-#   (1..team_size).each do |poke|
-#     name = Faker::Name.first_name
-#     species = Faker::Games::Pokemon.name
-#     Pokemon.create(nickname: name, species: species, trainer_id: trainer.id)
-#   end
-# end
