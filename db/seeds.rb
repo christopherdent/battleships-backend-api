@@ -7,6 +7,7 @@ Fleet.destroy_all
 ##Ship.new(name, class, country, image)
 User.create(name: "Computer")
 Fleet.create
+Fleet.create 
 
 ships_array = [
     {
