@@ -1,13 +1,17 @@
 require 'pry'
 require 'securerandom'
+require 'database_cleaner'
+
+DatabaseCleaner.clean_with(:truncation)
 
 User.destroy_all
 Ship.destroy_all
 Fleet.destroy_all
+Fleet.delete_all
 ##Ship.new(name, class, country, image)
 User.create(name: "Computer")
 Fleet.create
-Fleet.create 
+Fleet.create
 
 ships_array = [
     {
@@ -119,7 +123,7 @@ ships_array = [
   "name": "Bismarck",
   "kind": "Battleship",
   "country": "Germany",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Bb_bismarck.png/1024px-Bb_bismarck.png"
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTsgbe4bRKzj_MIjjAsRFTvF1IhX_RrXcd-YA&usqp=CAU"
 
   },
       {

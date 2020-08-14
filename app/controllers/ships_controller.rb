@@ -13,6 +13,13 @@ class ShipsController < ApplicationController
   def create
   end
 
+  def update ###THIS part works.  
+    ship = Ship.find(params[:id])
+    ship.fleet_id = 1
+    ship.save
+
+  end
+
   def destroy
     ship = Ship.find(params[:id])
     ship.destroy

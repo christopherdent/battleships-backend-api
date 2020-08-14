@@ -43,3 +43,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'faker'
 gem 'active_model_serializers'
+gem 'database_cleaner'
