@@ -6,10 +6,12 @@ DatabaseCleaner.clean_with(:truncation)
 
 User.destroy_all
 Ship.destroy_all
+Ship.delete_all
 Fleet.destroy_all
 Fleet.delete_all
 ##Ship.new(name, class, country, image)
 User.create(name: "Computer")
+
 Fleet.create
 Fleet.create
 
@@ -201,9 +203,11 @@ ships_array = [
 "kind": "Carrier",
 "country": "Free French",
 "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/CV_Bearn_NAN-5-63.jpg/600px-CV_Bearn_NAN-5-63.jpg"
+
 },
 {
-"name": "Mistral",
+"name": "MistralFleet.create
+Fleet.create",
 "kind": "Destroyer",
 "country": "Free French",
 "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Ouragan-1.jpg/600px-Ouragan-1.jpg"
@@ -242,23 +246,23 @@ ships_array = [
 },
 
 {
-"name": "Razummy",
-"kind": "Destroyer",
-"country": "USSR",
-"image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Aerial_view_of_Razumny_A_22471.jpg"
+  "name": "Razummy",
+  "kind": "Destroyer",
+  "country": "USSR",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Aerial_view_of_Razumny_A_22471.jpg"
 
 },
 
 {
-"name": "S-56",
-"kind": "Submarine",
-"country": "USSR",
-"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/053_-_Wladiwostok_2015_%2824130179580%29.jpg/600px-053_-_Wladiwostok_2015_%2824130179580%29.jpg"
+  "name": "S-56",
+  "kind": "Submarine",
+  "country": "USSR",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/053_-_Wladiwostok_2015_%2824130179580%29.jpg/600px-053_-_Wladiwostok_2015_%2824130179580%29.jpg"
 
 }
 ]
 
 
 ships_array.each do |ship|
-  Ship.create(name: "#{ship[:name]}", kind: "#{ship[:kind]}", country: "#{ship[:country]}", image: "#{ship[:image]}")
+  Ship.create(name: "#{ship[:name]}", kind: "#{ship[:kind]}", country: "#{ship[:country]}", image: "#{ship[:image]}", fleet_id: nil)
 end
