@@ -13,7 +13,7 @@ class ShipsController < ApplicationController
   def create
   end
 
-  def update ###THIS part works.  update mainly exists to assign a specific fleet id to the ship.
+  def update ###  update mainly exists to assign a specific fleet id to the ship.
     ship = Ship.find(params[:id])
     ship.fleet_id = 1   #this is instead of a typical .update - its the only change needed, and its not in params, so must hard code.
     fleet = Fleet.find(1)
@@ -22,11 +22,13 @@ class ShipsController < ApplicationController
       if ship.save
         render json: ship
       else
-        render json: {message: ship.errors.messages[:team_max][0]}
+        render json: {message: ship.errors.messages[:team_max][0]}  ##message when 5 ships.  when 5 ships, other things also must trigger - fleet card, computer fleet....
       end
 
     end
   end
+
+  
 
   # def destroy     I dont think I ever need to destroy a ship
   #   ship = Ship.find(params[:id])
