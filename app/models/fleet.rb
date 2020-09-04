@@ -1,12 +1,20 @@
 class Fleet < ApplicationRecord
   has_many :ships
+  validate :fleet?
 
+private
 
-  def ship_count_valid?
-    if self.ships.count >= 5
-      self.errors.add(:ship_max, "Maximum Fleet Capacity Reached!")
-
+  def fleet?
+    if self.ships != []
+      self.ships.count < 6
     end
   end
 
+
+
 end
+
+
+ # def validate_tags
+ #   errors.add(:tags, "too much") if tags.size > 5
+ # end

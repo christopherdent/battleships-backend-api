@@ -16,13 +16,13 @@ class FleetsController < ApplicationController
   #   fleet.ships << ship  ## adds the clicked ship to the user fleet
   # end
 
-  def update
+  def update  #this upddates he  fleett object to reset ship 
     a = Fleet.find(1)
     b = Fleet.find(2)
     a.ships = []
     b.ships = []
     a.save
-    b.save 
+    b.save
   end
 
 
