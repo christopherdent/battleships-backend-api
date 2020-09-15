@@ -16,7 +16,7 @@ class FleetsController < ApplicationController
   #   fleet.ships << ship  ## adds the clicked ship to the user fleet
   # end
 
-  def update  #this upddates he  fleett object to reset ship 
+  def update  #this upddates he  fleett object to reset ship.  THIS RESETS THE GAME ON RELOAD DONT MESS WITH IT.  
     a = Fleet.find(1)
     b = Fleet.find(2)
     a.ships = []
