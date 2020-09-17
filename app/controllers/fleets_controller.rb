@@ -5,18 +5,19 @@ class FleetsController < ApplicationController
     render json: fleets, include: [:ships]
   end
 
-  # def create  ##### probably no longer needed, seeded  fleets only to be used.
-    # No need to create a fleet, seed fleets always will be used.
-  # end
+  def create  ##### probably no longer needed, seeded  fleets only to be used.
+    # fleet = Fleet.find(2)
+    #
+    # fleet.save
+    # ships = Ship.order("RANDOM()").limit(5)
+    # ships.each do |ship|
+    #   fleet.ships << ship
+    # end
+    # fleet.save
+  end
 
 
-  # def update
-  #   ship = Ship.find(params[:ship_id]) ## it will need the ships id
-  #   fleet = Fleet.find(1) ## hard codes this action to ONLY update the player fleet
-  #   fleet.ships << ship  ## adds the clicked ship to the user fleet
-  # end
-
-  def update  #this upddates he  fleett object to reset ship.  THIS RESETS THE GAME ON RELOAD DONT MESS WITH IT.  
+  def update  #this upddates he  fleett object to reset ship.  THIS RESETS THE GAME ON RELOAD DONT MESS WITH IT.
     a = Fleet.find(1)
     b = Fleet.find(2)
     a.ships = []
@@ -28,7 +29,7 @@ class FleetsController < ApplicationController
 
   def show
     # ship = Ship.find(params[:ship_id])
-    fleet = Fleet.find(1)
+    fleet = Fleet.find(params[:id])
     render json: fleet
   end
 

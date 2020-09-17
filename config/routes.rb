@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post '/fleets' => 'fleets#update'
   resources :ships
   patch '/fleets' => 'fleets#update'
+  post '/ships/:id' => 'ships#update_two'
   resources :users
   post '/fleets' => 'fleets#update'
 

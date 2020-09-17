@@ -5,6 +5,7 @@ class Ship < ApplicationRecord
   validate do
     ship_count_valid? unless self.id == nil
   end
+  ###above code is whats preventing fleet assignment.
 
 
   fleet = []
@@ -30,9 +31,10 @@ class Ship < ApplicationRecord
 
   def ship_count_valid?
     if self  ##just so rails doesn't throw a fit when i try to seed from scratch
-      self.fleet_id = 1
-      if self.fleet.ships.count >= 4
-          self.errors.add(:team_max, "Maximum Fleet Capacity Reached!")
+      # self.fleet_id = 1  ### <--- this is the problem. just reference params instead of hard code should work.
+      # self.fleet_id = @fleet
+      if self.fleet.ships.count >= 5
+          self.errors.add(:fleet_max, "Maximum Fleet Capacity Reached!")
       end
     else
       self.save  #saves with new fleet id ... .

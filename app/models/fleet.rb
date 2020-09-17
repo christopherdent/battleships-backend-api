@@ -2,6 +2,14 @@ class Fleet < ApplicationRecord
   has_many :ships
   validate :fleet?
 
+
+  def create
+    # Fleet.create(id: 3)
+    #
+    # fleet.ships
+
+  end
+
 private
 
   def fleet?

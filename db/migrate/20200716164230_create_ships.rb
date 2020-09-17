@@ -5,6 +5,7 @@ class CreateShips < ActiveRecord::Migration[6.0]
       t.string :kind
       t.string :country
       t.string :image
+      # t.integer :fleet_id, foreign_key: true
       end
   end
 end

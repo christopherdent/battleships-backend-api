@@ -10,7 +10,7 @@ Ship.delete_all
 Fleet.destroy_all
 Fleet.delete_all
 ##Ship.new(name, class, country, image)
-User.create(name: "Computer")
+# User.create(name: "Computer")
 
 Fleet.create
 Fleet.create
@@ -206,8 +206,7 @@ ships_array = [
 
 },
 {
-"name": "MistralFleet.create
-Fleet.create",
+"name": "Mistral",
 "kind": "Destroyer",
 "country": "Free French",
 "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Ouragan-1.jpg/600px-Ouragan-1.jpg"
