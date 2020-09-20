@@ -89,35 +89,35 @@ ships_array = [
       {
       "name": "Ōyodo",
       "kind": "Cruiser",
-      "country": "Empire of Japan",
+      "country": "Japan",
       "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Japanese_cruiser_Oyodo_in_1944.jpg"
 
   },
       {
       "name": "Yamato",
       "kind": "Battleship",
-      "country": "Empire of Japan",
+      "country": "Japan",
       "image": "https://images-na.ssl-images-amazon.com/images/I/41-gdnx36%2BL._AC_.jpg"
 
   },
       {
       "name": "Shōkaku",
       "kind": "Carrier",
-      "country": "Empire of Japan",
+      "country": "Japan",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Japanese_aircraft_carrier_shokaku_1941.jpg/450px-Japanese_aircraft_carrier_shokaku_1941.jpg"
 
   },
       {
       "name": "Akizuki",
       "kind": "Destroyer",
-      "country": "Empire of Japan",
+      "country": "Japan",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Akizuki.jpg/450px-Akizuki.jpg"
 
   },
       {
   "name": "I-184",
   "kind": "Submarine",
-  "country": "Empire of Japan",
+  "country": "Japan",
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/I-176.jpg/450px-I-176.jpg"
 
   },
@@ -194,21 +194,21 @@ ships_array = [
 {
 "name": "Lorraine",
 "kind": "Battleship",
-"country": "Free French",
+"country": "French",
 "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Provence-1.jpg"
 
 },
 {
 "name": "Béarn",
 "kind": "Carrier",
-"country": "Free French",
+"country": "French",
 "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/CV_Bearn_NAN-5-63.jpg/600px-CV_Bearn_NAN-5-63.jpg"
 
 },
 {
 "name": "Mistral",
 "kind": "Destroyer",
-"country": "Free French",
+"country": "French",
 "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Ouragan-1.jpg/600px-Ouragan-1.jpg"
 
 },
@@ -216,7 +216,7 @@ ships_array = [
 {
 "name": "Bougainville",
 "kind": "Cruiser",
-"country": "Free French",
+"country": "French",
 "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Rigault_de_Genouilly_SLV_Green_1938.jpg/600px-Rigault_de_Genouilly_SLV_Green_1938.jpg"
 
 },
@@ -224,7 +224,7 @@ ships_array = [
 {
 "name": "Minerve",
 "kind": "Submarine",
-"country": "Free French",
+"country": "French",
 "image": " https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/%D0%A1%D1%83%D0%B1%D0%BC%D0%B0%D1%80%D0%B8%D0%BD%D0%B0_%D0%9C%D0%B8%D0%BD%D0%B5%D1%80%D0%B2%D0%B0.jpg/600px-%D0%A1%D1%83%D0%B1%D0%BC%D0%B0%D1%80%D0%B8%D0%BD%D0%B0_%D0%9C%D0%B8%D0%BD%D0%B5%D1%80%D0%B2%D0%B0.jpg"
 
 },
