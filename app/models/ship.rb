@@ -4,7 +4,7 @@ class Ship < ApplicationRecord
   belongs_to :fleet, optional: true
 
     validate do
-      ship_count_valid? unless self.id == nil || self.id == 2
+      ship_count_valid? unless self.id == nil || self.fleet_id == 2
   end
   ###above code is whats preventing fleet assignment.
 
@@ -32,14 +32,13 @@ class Ship < ApplicationRecord
 
   def ship_count_valid?
     if self  ##So rails doesn't throw a fit when i try to seed from scratch
-      # self.fleet_id = 1  ### <--- this is the problem. just reference params instead of hard code should work. Or is there any need to assign fleet here??
-
       if self.fleet.ships.count >= 5
-
           self.errors.add(:fleet_max, "Maximum Fleet Capacity Reached!")
       end
     else
         self.save
     end
+
+
   end
 end
