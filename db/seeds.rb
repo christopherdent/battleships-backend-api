@@ -258,7 +258,23 @@ ships_array = [
   "country": "USSR",
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/053_-_Wladiwostok_2015_%2824130179580%29.jpg/600px-053_-_Wladiwostok_2015_%2824130179580%29.jpg"
 
+},
+
+{
+  "name": "USS Flint",
+  "kind": "Cruiser",
+  "country": "USA",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/USS_Flint_%28CL-97%29_at_anchor_in_March_1945_%2880-G-K-3813%29.jpg/600px-USS_Flint_%28CL-97%29_at_anchor_in_March_1945_%2880-G-K-3813%29.jpg"
+
+},
+
+{
+  "name": "Akagi",
+  "kind": "Carrier",
+  "country": "Japan",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Akagi_Osaka.jpg/800px-Akagi_Osaka.jpg"
 }
+
 ]
 
 
