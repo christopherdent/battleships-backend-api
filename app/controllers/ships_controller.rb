@@ -31,19 +31,5 @@ class ShipsController < ApplicationController
     end
   end
 
-  # def update_two
-  #   params.permit!
-  #   ship = Ship.find(params[:id])
-  #   ship.fleet_id = 2
-  #   ship.save
-  # end
-
-
-
-  # def destroy     I dont think I ever need to destroy a ship
-  #   ship = Ship.find(params[:id])
-  #   ship.destroy
-  # end
-
 
 end
