@@ -59,7 +59,7 @@ class FleetsController < ApplicationController
 
     if arr1.sum > arr2.sum
       # return "Player 1 Wins"
-      render json: { message: 'You win!' }
+      render json: { message: 'You win! Consider a career at sea.' }
     else
       # return "Computer Wins"
       render json: { message: 'Computer wins! You really let THIS app beat you?  SAD.' }

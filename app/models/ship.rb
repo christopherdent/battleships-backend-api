@@ -9,7 +9,7 @@ class Ship < ApplicationRecord
 
   def points
     if self.kind == "Battleship"
-      return rand(40..50) ##actually return a random number between 40 and 50 and so on for all below.  for now let's not worry about that.
+      return rand(40..50)
     elsif self.kind == "Super Dreadnaught"
       return rand(55..65)
     elsif self.kind == "Carrier"
