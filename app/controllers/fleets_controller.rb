@@ -7,19 +7,35 @@ class FleetsController < ApplicationController
   end
 
   def create  ##### now used to assign ships to fleet 2.  should rename to a custom route.
-    fleet = Fleet.find(2)
-    fleet.ships = []
-    ships = Ship.all
-    newArray = []
-    ships.each do |ship|
-      newArray << ship if ship.fleet_id != 1
+    # fleet = Fleet.find(2)
+    # fleet.ships = []
+    # ships = Ship.all
+    # newArray = []
+    # ships.each do |ship|
+    #   newArray << ship if ship.fleet_id != 1
+    # end
+    #   newArray.each do |ship|
+    #     if fleet.ships.count <= 4
+    #        fleet.ships << ship
+    #      end
+    #   end
+    #   render json: fleet
     end
-      newArray.each do |ship|
-        if fleet.ships.count <= 4
-           fleet.ships << ship
-         end
+
+    def fleet_two
+      fleet = Fleet.find(2)
+      fleet.ships = []
+      ships = Ship.all
+      newArray = []
+      ships.each do |ship|
+        newArray << ship if ship.fleet_id != 1
       end
-      render json: fleet
+        newArray.each do |ship|
+          if fleet.ships.count <= 4
+             fleet.ships << ship
+           end
+        end
+        render json: fleet
     end
 
 
@@ -32,8 +48,6 @@ class FleetsController < ApplicationController
       b.save
       render json: { human_ships: a.ships, comp_ships: b.ships  }
   end
-
-
 
 
   def show
@@ -58,7 +72,7 @@ class FleetsController < ApplicationController
     end
 
     if arr1.sum > arr2.sum
-      # return "Player 1 Wins"
+
       render json: { message: 'You win! Consider a career at sea.' }
     else
       # return "Computer Wins"

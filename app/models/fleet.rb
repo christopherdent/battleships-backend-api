@@ -4,9 +4,6 @@ class Fleet < ApplicationRecord
 
 
   def create
-    # Fleet.create(id: 3)
-    #
-    # fleet.ships
 
   end
 
