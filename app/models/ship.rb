@@ -13,7 +13,7 @@ class Ship < ApplicationRecord
     elsif self.kind == "Super Dreadnaught"
       return rand(55..65)
     elsif self.kind == "Carrier"
-      return rand(50..60)
+      return rand(40..60)
     elsif self.kind == "Destroyer"
       return rand(30..40)
     elsif self.kind == "Submarine"
