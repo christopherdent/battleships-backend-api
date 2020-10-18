@@ -2,7 +2,7 @@ require 'pry'
 require 'securerandom'
 require 'database_cleaner'
 
-DatabaseCleaner.clean_with(:truncation)
+# DatabaseCleaner.clean_with(:truncation)
 
 User.destroy_all
 Ship.destroy_all
