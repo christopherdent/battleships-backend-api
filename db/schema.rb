@@ -21,16 +21,16 @@ ActiveRecord::Schema.define(version: 2020_08_12_005913) do
   end
 
   create_table "ships", force: :cascade do |t|
-    t.string "name"
-    t.string "kind"
-    t.string "country"
-    t.string "image"
-    t.integer "fleet_id"
+    t.text "name"
+    t.text "kind"
+    t.text "country"
+    t.text "image"
+    t.bigint "fleet_id"
     t.index ["fleet_id"], name: "index_ships_on_fleet_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
+    t.text "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
