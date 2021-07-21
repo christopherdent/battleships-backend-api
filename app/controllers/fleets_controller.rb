@@ -76,7 +76,7 @@ class FleetsController < ApplicationController
       render json: { message: 'You win! Consider a career at sea.' }
     else
       # return "Computer Wins"
-      render json: { message: 'Computer wins! You really let THIS app beat you?  SAD.' }
+      render json: { message: 'Computer wins! A life at sea is not for everyone.' }
 
     end
 
